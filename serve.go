@@ -16,7 +16,7 @@ func main() {
     dir := args[2]    
     fs := http.FileServer(http.Dir(dir))
     http.Handle("/", fs)
-    log.Println("Serving " + dir + " on port " + port)
+    log.Println("Serving " + dir + " on http://localhost:" + port)
     http.ListenAndServe(":" + port, nil)
   }
 }
