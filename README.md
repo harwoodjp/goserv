@@ -1,3 +1,7 @@
+alias `go run /path/to/goserv/serve.go` to `goserv`
+
+then
+
 `goserv [port] [dir]`
 
 e.g.
